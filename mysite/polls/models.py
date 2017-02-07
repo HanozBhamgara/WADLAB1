@@ -24,4 +24,4 @@ class Choice(models.Model):
         return self.choice_text
 
 
-   
+   #user name for database is admin
