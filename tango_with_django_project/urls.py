@@ -18,11 +18,9 @@ from django.contrib import admin
 from django.conf.urls import include
 from django.conf import settings
 from django.conf.urls.static import static
-
-import rango
 from rango import views
 
-
+app_name = 'rango'
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^rango/', include('rango.urls')),
